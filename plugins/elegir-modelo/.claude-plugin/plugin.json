@@ -1,0 +1,11 @@
+{
+  "name": "elegir-modelo",
+  "description": "Elige el modelo (Haiku 5.5, Sonnet 5.5, Opus 5.5 o Fable 5.1) y el esfuerzo según la tarea para que tu límite de uso dure más",
+  "version": "1.0.0",
+  "author": {
+    "name": "Roger Nunes",
+    "url": "https://github.com/roger-nuns"
+  },
+  "license": "MIT",
+  "keywords": ["modelo", "esfuerzo", "limite", "ahorro", "espanol"]
+}

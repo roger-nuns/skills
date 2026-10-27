@@ -1,0 +1,15 @@
+{
+  "name": "roger-nuns",
+  "description": "Skills gratis en español para usar Claude mejor y gastar menos",
+  "owner": {
+    "name": "Roger Nunes",
+    "url": "https://github.com/roger-nuns"
+  },
+  "plugins": [
+    {
+      "name": "elegir-modelo",
+      "source": "./plugins/elegir-modelo",
+      "description": "Elige el modelo y el esfuerzo según la tarea para que tu límite de uso dure más"
+    }
+  ]
+}
