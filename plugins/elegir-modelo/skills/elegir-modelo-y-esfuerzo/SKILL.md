@@ -43,13 +43,23 @@ Reglas:
 - El esfuerzo `max` sólo cuando lo pide la persona.
 - Di en una línea qué modelo y esfuerzo elegiste y por qué.
 - Elige el modelo al abrir la sesión y no lo cambies a mitad. Si hace falta otro modelo, abre otra sesión o lanza un agente con ese modelo.
-- Una tarea por sesión. Al cambiar de tema, `/clear` o sesión nueva.
+- Una tarea por conversación (mira el apartado siguiente).
 - En tareas grandes, lo mecánico va a un agente con Haiku; el análisis, a Sonnet; la decisión final, a Opus.
+
+## Una tarea, una conversación
+
+Esta es la regla que más ahorra después de elegir bien el modelo.
+
+- **Por qué (dato oficial):** Claude Code vuelve a enviar toda la conversación en cada mensaje. Una charla larga con temas mezclados gasta más en cada respuesta, aunque la pregunta nueva sea corta. Anthropic recomienda usar `/clear` al pasar a un trabajo distinto, y `/clear` no cuesta nada.
+- **Qué hacer:** al empezar una tarea nueva, abre una conversación nueva (o escribe `/clear`) y elige ahí su modelo y esfuerzo. Si antes quieres poder volver a la conversación anterior, ponle nombre con `/rename` y recupérala luego con `/resume`.
+- **Si una tarea es muy grande:** pártela en trozos y dale a cada trozo su propia conversación o su propio agente, con el modelo que le toque según la tabla de arriba.
+- **Si varias conversaciones tocan los mismos archivos:** que cada una trabaje en archivos distintos, o termina una antes de empezar la otra, para que no se pisen.
 
 ## Comandos útiles en Claude Code
 
 - `/model` para elegir modelo. Los nombres cortos `haiku`, `sonnet`, `opus` y `fable` siempre apuntan a la versión más nueva.
 - `/effort` para elegir el esfuerzo (por ejemplo `/effort low`).
+- `/clear` para empezar de cero sin coste; `/rename` y `/resume` para guardar y volver a una conversación.
 - `/usage` para ver cuánto llevas gastado y qué lo está gastando.
 
 ## Fuentes oficiales

@@ -9,6 +9,8 @@ Hace que tu límite de uso de Claude dure más. Antes de cada tarea, Claude mira
 | Difícil o importante (diseñar algo nuevo, decisiones caras) | Opus 5.5 | medium o high |
 | Lo más difícil y largo | Fable 5.1 | high |
 
+Además trae la regla que más ahorra: **una tarea, una conversación** (con `/clear` o una conversación nueva al cambiar de tema), y no cambiar de modelo a mitad de camino.
+
 Todos los datos de la skill salen de la documentación oficial de Anthropic, con enlaces al final del `SKILL.md`. Comprobados el 27 de octubre de 2026.
 
 ## Ejemplos
